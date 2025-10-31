@@ -1,5 +1,5 @@
 # ufanet-pool-api
-
+[Структура таблиц](/pool-api/pool-api/src/main/resources/db/2025-10-29--01-create-tables.sql)
 ## Сборка проекта
 В папке `./dev` выполнить:
 ```
