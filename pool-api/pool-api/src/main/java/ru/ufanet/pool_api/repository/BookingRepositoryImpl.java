@@ -117,7 +117,7 @@ public class BookingRepositoryImpl implements BookingRepository {
     public void delete(long clientId, LocalDateTime time, String reason) {
         String sql = "update bookings " +
                 "set deleted_at = now(), reason = ? " +
-                "where client_id = ? and start_time = ? ";
+                "where client_id = ? and start_time = ? and deleted_at is null";
         try (Connection connection = DataSourceUtils.getConnection(dataSource);
              PreparedStatement ps = connection.prepareStatement(sql)) {
             ps.setString(1, reason);
