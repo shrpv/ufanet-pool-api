@@ -3,6 +3,7 @@
 ## Сборка проекта
 В папке `./dev` выполнить:
 ```
+docker-compose build
 docker-compose up -d
 ```
 
